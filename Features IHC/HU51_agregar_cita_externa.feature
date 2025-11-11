@@ -1,4 +1,7 @@
 Feature: Agregar Citas Externas al Calendario
+Como usuario,
+quiero poder agregar citas que agendé por fuera de la app (de forma manual)a mi calendario,
+para tener un historial completo.
 
   Scenario: Abrir formulario para agregar cita manual
     Given el usuario está en la sección "Mis Citas"
@@ -15,3 +18,4 @@ Feature: Agregar Citas Externas al Calendario
     Given el usuario ingresa los datos de una cita con fecha ya pasada
     When presiona "Guardar"
     Then el sistema debe ubicar automáticamente la cita en la pestaña de "Citas Pasadas"
+
